@@ -19,12 +19,11 @@ Run commands in order and **stop if one fails**.
 These steps assume your **internal repo already exists and is empty** (no
 commits).
 
-Replace `EXTERNAL_URL` with your external repo's HTTPS or SSH clone URL.
-The internal URL below is an example; replace it if using a different repo.
+Use the URLs below, or replace them if syncing different repos.
 Do not include passwords or tokens in URLs.
 
 ```powershell
-git clone 'EXTERNAL_URL' project-sync
+git clone 'https://github.com/rutzsco/git-sync-external.git' project-sync
 Set-Location .\project-sync
 
 git remote rename origin upstream
